@@ -23,13 +23,6 @@ module.exports.getDetails = function () {
   return contacts;
 };
 
-module.exports.getContactsByOrganization = (organization) => {
-  let name = contacts.filter(
-    (contact) => contact.organization === organization
-  );
-  return name;
-};
-
 module.exports.getContactsByName = (name) => {
   let data = contacts.filter((contact) => contact.contactName === name);
   return data;
